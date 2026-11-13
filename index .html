@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Farhana Batool — AI Engineer building practical AI solutions, intelligent automation, and modern digital experiences for businesses.">
+  <meta name="theme-color" content="#f4f8ff">
+  <title>Farhana Batool | AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--blue:#1768d2;--blue2:#3989f4;--navy:#102b50;--ink:#172b45;--muted:#5c6d82;--pale:#edf5ff;--line:#dce8f6;--white:#fff;--shadow:0 12px 36px rgba(30,76,132,.09)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:#f7faff;color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.7}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .logo{font:800 1.12rem Manrope,sans-serif;color:var(--navy);letter-spacing:-.04em}
+    .logo span{color:var(--blue)}
+    nav{display:flex;align-items:center;gap:25px;font-size:.9rem;color:#4d6078;font-weight:600}
+    nav a:hover{color:var(--blue)}
+    .nav-btn,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:10px;padding:11px 18px;font-weight:700;font-size:.9rem;transition:.2s}
+    .nav-btn,.primary{background:var(--blue);color:white;box-shadow:0 7px 18px rgba(23,104,210,.2)}
+    .btn:hover,.nav-btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+    .secondary{background:white;border:1px solid #cbdcf0;color:var(--navy)}
+    .hero{padding:76px 0 65px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:45px}
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #cfe2fa;background:#eef6ff;color:#1b62b8;border-radius:99px;padding:6px 13px;font-size:.78rem;font-weight:800;letter-spacing:.04em}
+    h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.2;letter-spacing:-.035em}
+    h1{font-size:clamp(2.65rem,6vw,4.5rem);margin:18px 0 13px;color:var(--navy)}
+    h1 span{color:var(--blue)}
+    .hero p{font-size:1.08rem;color:var(--muted);max-width:620px;margin:0 0 25px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .hero-visual{min-height:330px;border-radius:26px;background:linear-gradient(145deg,#e6f1ff,#f8fbff);border:1px solid #d7e7fa;display:grid;place-items:center;position:relative;overflow:hidden}
+    .hero-visual:before,.hero-visual:after{content:"";position:absolute;border:1px solid rgba(23,104,210,.16);border-radius:50%;width:270px;height:270px}
+    .hero-visual:after{width:205px;height:205px}
+    .brain{z-index:1;width:145px;height:145px;border-radius:35px;background:linear-gradient(145deg,#287ce4,#155bb8);display:grid;place-items:center;color:white;font:800 3.2rem Manrope;box-shadow:0 18px 40px rgba(23,104,210,.25);transform:rotate(-5deg)}
+    .float{position:absolute;z-index:2;background:white;border:1px solid #e1ebf7;border-radius:12px;padding:10px 14px;box-shadow:var(--shadow);font-size:.8rem;font-weight:800;color:#31516f}
+    .f1{top:48px;left:22px}.f2{right:18px;top:100px}.f3{bottom:38px;left:35px}.f4{bottom:55px;right:20px}
+    section{padding:62px 0}
+    .heading{text-align:center;max-width:700px;margin:0 auto 32px}
+    .eyebrow{color:var(--blue);font-size:.76rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    h2{font-size:clamp(1.9rem,4vw,2.65rem);color:var(--navy);margin:9px 0 10px}
+    .heading p{color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .card{background:white;border:1px solid var(--line);border-radius:17px;padding:24px;box-shadow:var(--shadow)}
+    .card h3{font-size:1.15rem;color:var(--navy);margin:0 0 8px}
+    .card p{color:var(--muted);margin:0;font-size:.95rem}
+    .services,.projects,.skills,.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .service,.project,.skill,.reason{background:white;border:1px solid var(--line);border-radius:17px;padding:23px;box-shadow:var(--shadow);transition:.2s}
+    .service:hover,.project:hover,.skill:hover,.reason:hover{transform:translateY(-4px);border-color:#a8cafa}
+    .ico{width:46px;height:46px;border-radius:13px;background:#eaf3ff;color:var(--blue);display:grid;place-items:center;font-size:1.35rem;margin-bottom:15px}
+    .service h3,.project h3,.skill h3,.reason h3{font-size:1.08rem;color:var(--navy);margin:0 0 8px}
+    .service p,.project p,.skill p,.reason p{font-size:.91rem;color:var(--muted);margin:0}
+    .projects{grid-template-columns:repeat(2,1fr)}
+    .project{padding:0;overflow:hidden}
+    .project-banner{height:125px;background:linear-gradient(135deg,#e5f1ff,#f4f8ff);display:flex;align-items:center;justify-content:center;color:var(--blue);font-size:2.5rem;border-bottom:1px solid var(--line)}
+    .project-content{padding:21px}
+    .label{font-size:.72rem;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.1em}
+    .project h3{margin:7px 0 8px}
+    .project p{margin-bottom:12px}
+    .note{font-size:.78rem;color:#8a6a2a;background:#fff8e9;padding:8px 10px;border-radius:8px}
+    .skills{grid-template-columns:repeat(3,1fr)}
+    .skill-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+    .skill-tags span{background:#eff5fc;color:#345575;border:1px solid #dce8f6;border-radius:7px;padding:5px 9px;font-size:.78rem;font-weight:600}
+    .band{background:#edf5ff;border-top:1px solid #dfebf9;border-bottom:1px solid #dfebf9}
+    .reasons{grid-template-columns:repeat(4,1fr)}
+    .reason{text-align:center;padding:19px 15px;box-shadow:none}
+    .reason .ico{margin:0 auto 12px}
+    .contact-box{background:linear-gradient(130deg,#155fbd,#2b82e8);color:white;text-align:center;border-radius:22px;padding:48px 25px;box-shadow:0 16px 38px rgba(23,104,210,.2)}
+    .contact-box h2{color:white;margin:7px 0 10px}
+    .contact-box p{max-width:620px;margin:0 auto 22px;color:#e7f1ff}
+    .contact-box .secondary{border:0}
+    footer{padding:25px 0;margin-top:60px;border-top:1px solid var(--line);color:#6d7e92;font-size:.84rem;background:white}
+    .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:55px}.hero-visual{min-height:270px}.services,.skills{grid-template-columns:repeat(2,1fr)}.reasons{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.wrap{width:calc(100% - 30px)}.nav{height:65px}nav{gap:12px;font-size:.78rem}nav a:nth-child(2),nav a:nth-child(3){display:none}.nav-btn{padding:9px 11px;font-size:.8rem}.hero{padding:48px 0 35px}.hero-visual{min-height:235px}.float{font-size:.7rem;padding:7px 9px}.about-grid,.services,.projects,.skills{grid-template-columns:1fr}section{padding:48px 0}.contact-box{padding:38px 18px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#home">FARHANA<span> BATool.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-btn" href="#contact">Let's Connect</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <span class="pill">✦ AI ENGINEER · PAKISTAN</span>
+      <h1>Farhana Batool<br><span>AI Engineer</span></h1>
+      <p>Building practical AI solutions for real-world challenges. I’m focused on machine learning, intelligent applications, and data-driven ideas that help businesses work smarter and make better decisions.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore My Projects ↗</a>
+        <a class="btn secondary" href="#contact">Work With Me</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-label="Artificial intelligence illustration">
+      <span class="float f1">Machine Learning</span><span class="float f2">AI Solutions</span>
+      <div class="brain">AI</div>
+      <span class="float f3">Data Insights</span><span class="float f4">Innovation ✦</span>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="heading"><div class="eyebrow">About Me</div><h2>Technology with a purpose</h2><p>I’m interested in using artificial intelligence to turn complex challenges into useful, practical solutions.</p></div>
+      <div class="about-grid">
+        <article class="card"><h3>Who I Am</h3><p>I’m Farhana Batool, an AI Engineer focused on developing my capabilities in artificial intelligence, machine learning, and modern digital technologies. I value thoughtful problem-solving, continuous learning, and building technology around real user needs.</p></article>
+        <article class="card"><h3>My Mission</h3><p>My goal is to explore and build AI-powered solutions that can create meaningful value for businesses and communities. I’m especially interested in practical applications of AI in agriculture, business operations, and customer experiences.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="band">
+    <div class="wrap">
+      <div class="heading"><div class="eyebrow">What I Do</div><h2>AI-focused capabilities</h2><p>Exploring ways to make technology more useful, accessible, and effective for people and organisations.</p></div>
+      <div class="services">
+        <article class="service"><div class="ico">🤖</div><h3>AI & Machine Learning</h3><p>Exploring machine learning approaches to identify patterns, support predictions, and solve defined problems.</p></article>
+        <article class="service"><div class="ico">⚡</div><h3>Intelligent Automation</h3><p>Identifying repetitive workflows where automation can reduce manual effort and improve consistency.</p></article>
+        <article class="service"><div class="ico">📊</div><h3>Data Analysis</h3><p>Turning data into understandable insights that can support informed decisions and planning.</p></article>
+        <article class="service"><div class="ico">🌐</div><h3>Modern Websites</h3><p>Creating clean, responsive web experiences to present ideas, services, and digital projects.</p></article>
+        <article class="service"><div class="ico">🌱</div><h3>AI in Agriculture</h3><p>Exploring AI applications for crop monitoring, agricultural insights, and smarter farming decisions.</p></article>
+        <article class="service"><div class="ico">💡</div><h3>AI Product Ideas</h3><p>Shaping real user and business challenges into clear, testable AI product concepts.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="heading"><div class="eyebrow">My Projects</div><h2>Ideas focused on real problems</h2><p>A selection of portfolio concepts and areas of work. Concept projects are labelled clearly; completed work can be linked here as it becomes available.</p></div>
+      <div class="projects">
+        <article class="project"><div class="project-banner">🌾</div><div class="project-content"><span class="label">AI in Agriculture · Concept</span><h3>Smart Agriculture AI</h3><p>A concept exploring how data and machine learning could help farmers monitor crop conditions, identify risks, and make informed decisions.</p><div class="note">Concept project — implementation and results to be added.</div></div></article>
+        <article class="project"><div class="project-banner">💬</div><div class="project-content"><span class="label">Customer Experience · Concept</span><h3>AI Customer Assistant</h3><p>A proposed AI assistant that can help answer common customer questions and guide users to relevant business information.</p><div class="note">Concept project — demo and technical details to be added.</div></div></article>
+        <article class="project"><div class="project-banner">📈</div><div class="project-content"><span class="label">Data & Analytics · Concept</span><h3>Business Insights Dashboard</h3><p>A dashboard concept for organising business data and making key patterns easier to understand.</p><div class="note">Concept project — dataset and evaluation to be added.</div></div></article>
+        <article class="project"><div class="project-banner">🧠</div><div class="project-content"><span class="label">Machine Learning · Practice</span><h3>Applied ML Experiments</h3><p>A place to document model experiments, data preparation, evaluation methods, and practical lessons from machine learning work.</p><div class="note">Add repository links, model metrics, and live demonstrations.</div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="band">
+    <div class="wrap">
+      <div class="heading"><div class="eyebrow">My Skills</div><h2>Tools and areas of focus</h2><p>A growing technical toolkit for designing, developing, and understanding AI solutions.</p></div>
+      <div class="skills">
+        <article class="skill"><div class="ico">⌨️</div><h3>Programming</h3><p>Foundations for building and working with software.</p><div class="skill-tags"><span>Python</span><span>HTML</span><span>CSS</span></div></article>
+        <article class="skill"><div class="ico">🧠</div><h3>Artificial Intelligence</h3><p>Core concepts and practical AI problem-solving.</p><div class="skill-tags"><span>Machine Learning</span><span>AI Concepts</span><span>Data Analysis</span></div></article>
+        <article class="skill"><div class="ico">🔧</div><h3>Developer Tools</h3><p>Tools for building, managing, and sharing projects.</p><div class="skill-tags"><span>Git</span><span>GitHub</span><span>VS Code</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="heading"><div class="eyebrow">Why Work With Me</div><h2>A thoughtful, solution-first approach</h2><p>I believe good technology starts with understanding the people and problems it is meant to serve.</p></div>
+      <div class="reasons">
+        <article class="reason"><div class="ico">🎯</div><h3>Problem Focus</h3><p>Start with the real need, not just the technology.</p></article>
+        <article class="reason"><div class="ico">🔍</div><h3>Clear Thinking</h3><p>Break complex challenges into practical steps.</p></article>
+        <article class="reason"><div class="ico">📚</div><h3>Continuous Growth</h3><p>Keep learning and improving through practice.</p></article>
+        <article class="reason"><div class="ico">🤝</div><h3>Collaboration</h3><p>Value clear communication and shared goals.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-box">
+        <div class="eyebrow" style="color:#d8eaff">Let's Work Together</div>
+        <h2>Have an idea worth exploring with AI?</h2>
+        <p>I’d love to connect with people, teams, and businesses interested in practical AI, machine learning, and data-driven solutions.</p>
+        <div class="actions" style="justify-content:center">
+          <a class="btn secondary" href="https://github.com/farhanabatool32304-ai" target="_blank" rel="noopener noreferrer">Visit My GitHub ↗</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/farhana-batool-772801438/" target="_blank" rel="noopener noreferrer">Visit My LinkedIn ↗</a>
+          <a class="btn secondary" href="https://farhanabatool32304-ai.github.io/Farhana-Batool-AI-portfolio-/" target="_blank" rel="noopener noreferrer">Visit My Website ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap foot"><span>© 2026 Farhana Batool. All rights reserved.</span><span>AI Engineer · Pakistan</span></div></footer>
+</body>
+</html>
