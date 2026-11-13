@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Farhana Batool — AI Engineer focused on machine learning, generative AI, and intelligent systems.">
+  <meta name="theme-color" content="#080d1b">
+  <title>Farhana Batool | AI Engineer</title>
+  <style>
+    :root{--bg:#080d1b;--panel:#101a2d;--panel2:#0d1628;--text:#edf4ff;--muted:#a7b5ca;--cyan:#55e6e0;--violet:#9b8cff;--line:rgba(173,198,232,.16);--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(83,87,190,.19),transparent 34%),radial-gradient(ellipse at 0% 25%,rgba(38,205,198,.10),transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.nav{position:sticky;top:0;z-index:5;background:rgba(8,13,27,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.02em}.brand span{color:var(--cyan)}.links{display:flex;gap:26px;color:var(--muted);font-size:.91rem}.links a:hover{color:var(--cyan)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:9px}
+    .hero{min-height:680px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px;padding:95px 0 80px}.eyebrow{color:var(--cyan);font-size:.78rem;letter-spacing:.19em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(3rem,7vw,5.8rem);line-height:1.02;letter-spacing:-.055em;margin:20px 0}.hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--cyan),#b2a4ff);background-clip:text;color:transparent}.lead{font-size:1.12rem;color:#c0cde0;max-width:650px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.btn{padding:13px 20px;border-radius:10px;font-weight:750;border:1px solid var(--line);display:inline-flex;align-items:center;gap:9px}.primary{background:linear-gradient(110deg,var(--cyan),#9b8cff);color:#07111e;border:0}.btn:hover{transform:translateY(-2px)}.hero-note{color:var(--muted);font-size:.85rem;margin-top:20px}.visual{position:relative;min-height:390px;display:grid;place-items:center}.orb{width:min(340px,75vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(85,230,224,.3),rgba(155,140,255,.13) 42%,rgba(13,22,40,.2) 70%);border:1px solid rgba(85,230,224,.35);box-shadow:0 0 90px rgba(85,230,224,.12),inset 0 0 55px rgba(155,140,255,.13);display:grid;place-items:center;position:relative}.orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(155,140,255,.4);border-radius:50%;inset:-22px;transform:rotate(-25deg) scaleY(.38)}.orb:after{inset:-48px;transform:rotate(35deg) scaleY(.3);border-color:rgba(85,230,224,.28)}.orbcore{text-align:center}.orbcore strong{display:block;font-size:4.2rem;line-height:1;color:var(--cyan)}.orbcore span{font-size:.75rem;letter-spacing:.22em;color:var(--muted)}
+    section{padding:88px 0;border-top:1px solid var(--line)}.section-head{max-width:720px;margin-bottom:38px}.kicker{color:var(--cyan);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.section-head h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.12;letter-spacing:-.04em;margin:12px 0}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}.panel{background:linear-gradient(145deg,rgba(16,26,45,.94),rgba(13,22,40,.88));border:1px solid var(--line);border-radius:18px;padding:28px}.panel p{color:var(--muted)}.principles{display:grid;grid-template-columns:1fr 1fr;gap:12px}.principle{padding:18px;border-radius:13px;background:rgba(255,255,255,.025);border:1px solid var(--line)}.principle b{display:block;color:var(--cyan);margin-bottom:5px}.principle span{color:var(--muted);font-size:.9rem}
+    .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.cap{background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:24px}.num{font-size:.8rem;color:var(--cyan);letter-spacing:.12em}.cap h3{margin:12px 0 8px;font-size:1.1rem}.cap p{color:var(--muted);font-size:.93rem;margin:0}
+    .skill-wrap{display:flex;flex-wrap:wrap;gap:10px}.tag{border:1px solid rgba(85,230,224,.22);background:rgba(85,230,224,.055);color:#d9f7f5;padding:9px 13px;border-radius:999px;font-size:.9rem}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:var(--panel2)}.project-top{height:150px;padding:24px;display:flex;align-items:flex-end;background:radial-gradient(circle at 80% 20%,rgba(155,140,255,.32),transparent 45%),linear-gradient(120deg,rgba(85,230,224,.12),rgba(16,26,45,.1))}.project-top span{font-size:.76rem;letter-spacing:.15em;color:var(--cyan);text-transform:uppercase}.project-body{padding:24px}.project-body p{color:var(--muted);font-size:.93rem}.project-body small{color:#c9c4ff}.project-note{font-size:.84rem;color:var(--muted);margin-top:20px}
+    .approach{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{border-top:2px solid var(--cyan);padding:18px 14px 0 0}.step b{font-size:1.05rem}.step p{color:var(--muted);font-size:.9rem}
+    .contact{display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px;background:linear-gradient(110deg,rgba(85,230,224,.1),rgba(155,140,255,.1));border:1px solid var(--line);padding:38px;border-radius:20px}.contact h2{font-size:2rem;margin:0 0 8px}.contact p{color:var(--muted);margin:0}.contact-links{display:flex;gap:12px;flex-wrap:wrap}footer{padding:28px 0;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:75px}.visual{min-height:300px}.about-grid{grid-template-columns:1fr}.cap-grid{grid-template-columns:repeat(2,1fr)}.approach{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}.links{display:none}.menu{display:block}.links.open{display:flex;position:absolute;top:76px;left:0;right:0;padding:22px;background:#0b1324;flex-direction:column;gap:16px;border-bottom:1px solid var(--line)}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,var(--max))}.hero{min-height:auto;padding:65px 0}.hero h1{font-size:3.25rem}.cap-grid,.projects,.principles,.approach{grid-template-columns:1fr}section{padding:68px 0}.panel{padding:22px}.contact{padding:25px}.orb{width:245px}}
+  
+    /* Refined professional visual system */
+    :root{
+      --bg:#0b1220;--panel:#111d30;--panel2:#0f1a2b;--text:#f3f6fc;
+      --muted:#aab7ca;--cyan:#76d7d0;--violet:#83a9f5;--line:rgba(190,208,235,.14);--max:1160px
+    }
+    body{
+      background:
+        radial-gradient(ellipse at 88% 5%,rgba(91,130,210,.13),transparent 32%),
+        radial-gradient(ellipse at 5% 28%,rgba(67,176,166,.08),transparent 28%),
+        var(--bg);
+      letter-spacing:.005em
+    }
+    .nav{background:rgba(11,18,32,.91);border-bottom-color:rgba(190,208,235,.12)}
+    .brand{font-size:1.02rem;letter-spacing:.08em}.brand span{color:var(--cyan)}
+    .links{gap:25px;font-weight:600;font-size:.88rem}
+    .hero{min-height:650px;gap:64px;padding-top:88px}
+    .eyebrow,.kicker{color:var(--cyan);font-weight:750;letter-spacing:.16em}
+    .hero h1{font-size:clamp(3.2rem,7vw,5.65rem);letter-spacing:-.06em;font-weight:780}
+    .hero h1 em{
+      background:linear-gradient(100deg,#83a9f5 5%,#76d7d0 92%);
+      background-clip:text;-webkit-background-clip:text;color:transparent
+    }
+    .lead{color:#c1ccdc;line-height:1.8;font-size:1.08rem;max-width:620px}
+    .btn{transition:transform .2s ease,background .2s ease,border-color .2s ease}
+    .primary{background:linear-gradient(110deg,#83a9f5,#76d7d0);color:#081321;font-weight:800}
+    .btn:not(.primary){background:rgba(255,255,255,.025);border-color:rgba(190,208,235,.22)}
+    .btn:not(.primary):hover{border-color:var(--cyan);background:rgba(118,215,208,.07)}
+    .hero-note{letter-spacing:.035em}
+    .visual{min-height:400px}
+    .orb{
+      width:min(330px,75vw);
+      background:radial-gradient(circle at 35% 30%,rgba(118,215,208,.19),rgba(131,169,245,.12) 45%,rgba(15,26,43,.2) 72%);
+      border:1px solid rgba(118,215,208,.3);
+      box-shadow:0 0 75px rgba(91,130,210,.12),inset 0 0 55px rgba(131,169,245,.09)
+    }
+    .orb:before{border-color:rgba(131,169,245,.32)}
+    .orb:after{border-color:rgba(118,215,208,.22)}
+    .orbcore strong{color:var(--cyan);font-weight:800}
+    section{border-top-color:rgba(190,208,235,.11);padding:92px 0}
+    .section-head{margin-bottom:42px}
+    .section-head h2{font-weight:760;letter-spacing:-.045em}
+    .section-head p{line-height:1.8}
+    .panel,.cap,.project{
+      background:linear-gradient(145deg,rgba(18,31,51,.96),rgba(14,25,42,.96));
+      border-color:rgba(190,208,235,.14);
+      box-shadow:0 12px 36px rgba(0,0,0,.10)
+    }
+    .panel{padding:30px}
+    .panel h3,.cap h3,.project h3{letter-spacing:-.015em}
+    .principle{background:rgba(255,255,255,.025);border-color:rgba(190,208,235,.12)}
+    .principle b,.num{color:var(--cyan)}
+    .cap{padding:26px;transition:transform .2s ease,border-color .2s ease}
+    .cap:hover,.project:hover{transform:translateY(-3px);border-color:rgba(118,215,208,.36)}
+    .cap p,.project-body p,.step p{line-height:1.75}
+    .tag{background:rgba(131,169,245,.07);border-color:rgba(131,169,245,.22);color:#dce7fa;padding:9px 14px}
+    .tag:hover{border-color:var(--cyan)}
+    .project-top{
+      background:
+        radial-gradient(circle at 82% 18%,rgba(131,169,245,.24),transparent 43%),
+        linear-gradient(120deg,rgba(118,215,208,.09),rgba(18,31,51,.15))
+    }
+    .project-top span{color:var(--cyan)}
+    .project-body small{color:#a9c3ff}
+    .step{border-top-color:var(--cyan)}
+    .contact{
+      background:linear-gradient(110deg,rgba(131,169,245,.10),rgba(118,215,208,.075));
+      border-color:rgba(190,208,235,.17);box-shadow:0 18px 50px rgba(0,0,0,.12)
+    }
+    footer{border-top:1px solid rgba(190,208,235,.10);margin-top:10px}
+    @media(max-width:850px){.hero{gap:28px}.links.open{background:#0d1728}}
+    @media(max-width:560px){section{padding:70px 0}.panel{padding:23px}.hero h1{font-size:3.15rem}}
+
+  </style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+  <a class="brand" href="#home">FARHANA<span>.</span></a>
+  <nav class="links" id="navlinks"><a href="#about">Profile</a><a href="#expertise">Expertise</a><a href="#skills">Technology</a><a href="#work">Selected Work</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
+  <button class="menu" id="menubtn" aria-label="Toggle navigation">Menu</button>
+</div></header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">Artificial Intelligence · Engineering · Innovation</div>
+      <h1>Farhana<br>Batool<br><em>AI Engineer</em></h1>
+      <p class="lead">Engineering intelligent solutions through machine learning, generative AI, and thoughtfully designed AI systems — with a focus on practical impact, reliability, and responsible innovation.</p>
+      <div class="actions"><a class="btn primary" href="#work">Explore selected work ↗</a><a class="btn" href="#contact">Get in touch</a></div>
+      <p class="hero-note">Machine Learning · Generative AI · Intelligent Systems</p>
+    </div>
+    <div class="visual" aria-label="Abstract artificial intelligence visual"><div class="orb"><div class="orbcore"><strong>AI</strong><span>INTELLIGENCE<br>IN MOTION</span></div></div></div>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div class="kicker">Professional profile</div><h2>Building intelligence into real-world solutions.</h2><p>A professional portfolio focused on engineering capability, technical problem-solving, and the development of useful AI-powered systems.</p></div>
+    <div class="about-grid">
+      <div class="panel"><h3>About Farhana</h3><p>I am Farhana Batool, an AI Engineer focused on the design and development of intelligent technologies. My work and interests span machine learning, generative AI, and the application of AI to meaningful real-world challenges.</p><p>I approach AI engineering with an emphasis on sound technical foundations, clear problem definition, practical implementation, and solutions that create measurable value.</p></div>
+      <div class="panel"><div class="principles">
+        <div class="principle"><b>Engineering mindset</b><span>Structured problem-solving and implementation.</span></div>
+        <div class="principle"><b>Applied AI</b><span>Turning use cases into intelligent systems.</span></div>
+        <div class="principle"><b>Innovation</b><span>Exploring modern AI methods and tools.</span></div>
+        <div class="principle"><b>Impact</b><span>Prioritizing usefulness, reliability, and value.</span></div>
+      </div></div>
+    </div>
+  </div></section>
+
+  <section id="expertise"><div class="wrap">
+    <div class="section-head"><div class="kicker">Core expertise</div><h2>AI capabilities</h2><p>Core technical domains represented across the portfolio.</p></div>
+    <div class="cap-grid">
+      <article class="cap"><div class="num">01 / MACHINE LEARNING</div><h3>Predictive Intelligence</h3><p>Data-driven modeling, pattern recognition, model evaluation, and predictive approaches for practical problems.</p></article>
+      <article class="cap"><div class="num">02 / GENERATIVE AI</div><h3>Generative Systems</h3><p>Exploring language-model-powered applications, prompt design, retrieval workflows, and AI-assisted experiences.</p></article>
+      <article class="cap"><div class="num">03 / AI APPLICATIONS</div><h3>Intelligent Products</h3><p>Designing AI-enabled applications that connect technical capability with clear user and business needs.</p></article>
+      <article class="cap"><div class="num">04 / DATA & ANALYTICS</div><h3>Data Intelligence</h3><p>Working with data preparation, exploration, feature understanding, and evidence-led decisions.</p></article>
+      <article class="cap"><div class="num">05 / MODEL DEVELOPMENT</div><h3>Model Lifecycle</h3><p>Considering experimentation, evaluation, iteration, and the path from prototype toward deployment.</p></article>
+      <article class="cap"><div class="num">06 / RESPONSIBLE AI</div><h3>Trustworthy Systems</h3><p>Keeping reliability, transparency, privacy, and responsible use in view when developing AI solutions.</p></article>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="section-head"><div class="kicker">Technical toolkit</div><h2>Technology & tools</h2><p>A focused technology profile. Keep only the tools and frameworks you can confidently discuss and demonstrate.</p></div>
+    <div class="panel">
+      <h3>Programming & development</h3><div class="skill-wrap"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span></div>
+      <h3 style="margin-top:28px">AI & machine learning ecosystem</h3><div class="skill-wrap"><span class="tag">Machine Learning</span><span class="tag">Generative AI</span><span class="tag">Large Language Models</span><span class="tag">Hugging Face</span></div>
+      <h3 style="margin-top:28px">Engineering workflow</h3><div class="skill-wrap"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">API Integration</span><span class="tag">Web Deployment</span></div>
+    </div>
+  </div></section>
+
+  <section id="work"><div class="wrap">
+    <div class="section-head"><div class="kicker">Portfolio</div><h2>Selected AI work</h2><p>Use this section to present verified projects with a clear problem, your engineering contribution, the technology used, and the outcome.</p></div>
+    <div class="projects">
+      <article class="project"><div class="project-top"><span>Case study 01 · Applied AI</span></div><div class="project-body"><h3>AI-Powered Problem Solving</h3><p>Present a real project that applies AI to a defined industry or operational challenge. Explain the problem, your solution architecture, your individual contribution, and the evidence of impact.</p><small>ADD: project repository · demo · results</small></div></article>
+      <article class="project"><div class="project-top"><span>Case study 02 · Generative AI</span></div><div class="project-body"><h3>Generative AI Application</h3><p>Showcase a verified application using generative AI. Describe the user need, model or service used, workflow design, evaluation approach, and key limitations.</p><small>ADD: project repository · demo · results</small></div></article>
+    </div>
+    <p class="project-note">These are portfolio case-study placeholders, not claims of completed projects. Replace them with your actual work before publishing.</p>
+  </div></section>
+
+  <section id="approach"><div class="wrap">
+    <div class="section-head"><div class="kicker">Engineering approach</div><h2>From problem to deployed solution.</h2><p>A disciplined workflow for developing AI systems that address clearly defined needs.</p></div>
+    <div class="approach">
+      <div class="step"><b>01. Define</b><p>Understand the problem, users, constraints, and success criteria.</p></div>
+      <div class="step"><b>02. Design</b><p>Select an appropriate data, model, and system architecture.</p></div>
+      <div class="step"><b>03. Develop</b><p>Build, test, evaluate, and iteratively improve the solution.</p></div>
+      <div class="step"><b>04. Deliver</b><p>Document, deploy, monitor, and refine for real-world use.</p></div>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="contact"><div><div class="kicker">Connect</div><h2>Let's build something intelligent.</h2><p>For professional opportunities, AI collaborations, and discussions about applied artificial intelligence.</p></div>
+      <div class="contact-links"><a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></div>
+    </div>
+  </div></section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Farhana Batool · AI Engineer</span><span>Designed for intelligent impact.</span></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const menu = document.getElementById('menubtn');
+  const links = document.getElementById('navlinks');
+  menu.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+</body>
+</html>
