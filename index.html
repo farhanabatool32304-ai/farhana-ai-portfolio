@@ -3,181 +3,431 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Farhana Batool — AI Engineer focused on machine learning, generative AI, and intelligent systems.">
-  <meta name="theme-color" content="#080d1b">
+  <meta name="description" content="Farhana Batool — AI Engineer exploring machine learning, generative AI, and intelligent applications.">
+  <meta name="theme-color" content="#F5F7FC">
   <title>Farhana Batool | AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#080d1b;--panel:#101a2d;--panel2:#0d1628;--text:#edf4ff;--muted:#a7b5ca;--cyan:#55e6e0;--violet:#9b8cff;--line:rgba(173,198,232,.16);--max:1160px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(83,87,190,.19),transparent 34%),radial-gradient(ellipse at 0% 25%,rgba(38,205,198,.10),transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
-    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.nav{position:sticky;top:0;z-index:5;background:rgba(8,13,27,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.02em}.brand span{color:var(--cyan)}.links{display:flex;gap:26px;color:var(--muted);font-size:.91rem}.links a:hover{color:var(--cyan)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:9px}
-    .hero{min-height:680px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px;padding:95px 0 80px}.eyebrow{color:var(--cyan);font-size:.78rem;letter-spacing:.19em;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(3rem,7vw,5.8rem);line-height:1.02;letter-spacing:-.055em;margin:20px 0}.hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--cyan),#b2a4ff);background-clip:text;color:transparent}.lead{font-size:1.12rem;color:#c0cde0;max-width:650px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.btn{padding:13px 20px;border-radius:10px;font-weight:750;border:1px solid var(--line);display:inline-flex;align-items:center;gap:9px}.primary{background:linear-gradient(110deg,var(--cyan),#9b8cff);color:#07111e;border:0}.btn:hover{transform:translateY(-2px)}.hero-note{color:var(--muted);font-size:.85rem;margin-top:20px}.visual{position:relative;min-height:390px;display:grid;place-items:center}.orb{width:min(340px,75vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(85,230,224,.3),rgba(155,140,255,.13) 42%,rgba(13,22,40,.2) 70%);border:1px solid rgba(85,230,224,.35);box-shadow:0 0 90px rgba(85,230,224,.12),inset 0 0 55px rgba(155,140,255,.13);display:grid;place-items:center;position:relative}.orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(155,140,255,.4);border-radius:50%;inset:-22px;transform:rotate(-25deg) scaleY(.38)}.orb:after{inset:-48px;transform:rotate(35deg) scaleY(.3);border-color:rgba(85,230,224,.28)}.orbcore{text-align:center}.orbcore strong{display:block;font-size:4.2rem;line-height:1;color:var(--cyan)}.orbcore span{font-size:.75rem;letter-spacing:.22em;color:var(--muted)}
-    section{padding:88px 0;border-top:1px solid var(--line)}.section-head{max-width:720px;margin-bottom:38px}.kicker{color:var(--cyan);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.section-head h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.12;letter-spacing:-.04em;margin:12px 0}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}.panel{background:linear-gradient(145deg,rgba(16,26,45,.94),rgba(13,22,40,.88));border:1px solid var(--line);border-radius:18px;padding:28px}.panel p{color:var(--muted)}.principles{display:grid;grid-template-columns:1fr 1fr;gap:12px}.principle{padding:18px;border-radius:13px;background:rgba(255,255,255,.025);border:1px solid var(--line)}.principle b{display:block;color:var(--cyan);margin-bottom:5px}.principle span{color:var(--muted);font-size:.9rem}
-    .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.cap{background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:24px}.num{font-size:.8rem;color:var(--cyan);letter-spacing:.12em}.cap h3{margin:12px 0 8px;font-size:1.1rem}.cap p{color:var(--muted);font-size:.93rem;margin:0}
-    .skill-wrap{display:flex;flex-wrap:wrap;gap:10px}.tag{border:1px solid rgba(85,230,224,.22);background:rgba(85,230,224,.055);color:#d9f7f5;padding:9px 13px;border-radius:999px;font-size:.9rem}
-    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:var(--panel2)}.project-top{height:150px;padding:24px;display:flex;align-items:flex-end;background:radial-gradient(circle at 80% 20%,rgba(155,140,255,.32),transparent 45%),linear-gradient(120deg,rgba(85,230,224,.12),rgba(16,26,45,.1))}.project-top span{font-size:.76rem;letter-spacing:.15em;color:var(--cyan);text-transform:uppercase}.project-body{padding:24px}.project-body p{color:var(--muted);font-size:.93rem}.project-body small{color:#c9c4ff}.project-note{font-size:.84rem;color:var(--muted);margin-top:20px}
-    .approach{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{border-top:2px solid var(--cyan);padding:18px 14px 0 0}.step b{font-size:1.05rem}.step p{color:var(--muted);font-size:.9rem}
-    .contact{display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px;background:linear-gradient(110deg,rgba(85,230,224,.1),rgba(155,140,255,.1));border:1px solid var(--line);padding:38px;border-radius:20px}.contact h2{font-size:2rem;margin:0 0 8px}.contact p{color:var(--muted);margin:0}.contact-links{display:flex;gap:12px;flex-wrap:wrap}footer{padding:28px 0;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-    @media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:75px}.visual{min-height:300px}.about-grid{grid-template-columns:1fr}.cap-grid{grid-template-columns:repeat(2,1fr)}.approach{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}.links{display:none}.menu{display:block}.links.open{display:flex;position:absolute;top:76px;left:0;right:0;padding:22px;background:#0b1324;flex-direction:column;gap:16px;border-bottom:1px solid var(--line)}}
-    @media(max-width:560px){.wrap{width:min(100% - 30px,var(--max))}.hero{min-height:auto;padding:65px 0}.hero h1{font-size:3.25rem}.cap-grid,.projects,.principles,.approach{grid-template-columns:1fr}section{padding:68px 0}.panel{padding:22px}.contact{padding:25px}.orb{width:245px}}
-  
-    /* Refined professional visual system */
-    :root{
-      --bg:#0b1220;--panel:#111d30;--panel2:#0f1a2b;--text:#f3f6fc;
-      --muted:#aab7ca;--cyan:#76d7d0;--violet:#83a9f5;--line:rgba(190,208,235,.14);--max:1160px
+    :root {
+      --bg: #F5F7FC;
+      --surface: #ffffff;
+      --surface-2: #EAF0FF;
+      --text: #142b4a;
+      --muted: #64748b;
+      --purple: #3563E9;
+      --cyan: #3563E9;
+      --line: rgba(20, 43, 74, .15);
+      --gradient: linear-gradient(115deg, #142B4A 0%, #3563E9 100%);
+      --max: 1160px;
     }
-    body{
-      background:
-        radial-gradient(ellipse at 88% 5%,rgba(91,130,210,.13),transparent 32%),
-        radial-gradient(ellipse at 5% 28%,rgba(67,176,166,.08),transparent 28%),
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0; color: var(--text); background:
+        radial-gradient(ellipse at 82% 5%, rgba(15, 118, 110, .09), transparent 34%),
+        radial-gradient(ellipse at 5% 42%, rgba(20, 43, 74, .045), transparent 32%),
         var(--bg);
-      letter-spacing:.005em
+      font-family: "DM Sans", sans-serif; line-height: 1.7;
     }
-    .nav{background:rgba(11,18,32,.91);border-bottom-color:rgba(190,208,235,.12)}
-    .brand{font-size:1.02rem;letter-spacing:.08em}.brand span{color:var(--cyan)}
-    .links{gap:25px;font-weight:600;font-size:.88rem}
-    .hero{min-height:650px;gap:64px;padding-top:88px}
-    .eyebrow,.kicker{color:var(--cyan);font-weight:750;letter-spacing:.16em}
-    .hero h1{font-size:clamp(3.2rem,7vw,5.65rem);letter-spacing:-.06em;font-weight:780}
-    .hero h1 em{
-      background:linear-gradient(100deg,#83a9f5 5%,#76d7d0 92%);
-      background-clip:text;-webkit-background-clip:text;color:transparent
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .wrap { width: min(var(--max), calc(100% - 44px)); margin: auto; }
+    .nav {
+      position: sticky; top: 0; z-index: 20; backdrop-filter: blur(18px);
+      background: rgba(255, 255, 255, .96); border-bottom: 1px solid var(--line);
     }
-    .lead{color:#c1ccdc;line-height:1.8;font-size:1.08rem;max-width:620px}
-    .btn{transition:transform .2s ease,background .2s ease,border-color .2s ease}
-    .primary{background:linear-gradient(110deg,#83a9f5,#76d7d0);color:#081321;font-weight:800}
-    .btn:not(.primary){background:rgba(255,255,255,.025);border-color:rgba(190,208,235,.22)}
-    .btn:not(.primary):hover{border-color:var(--cyan);background:rgba(118,215,208,.07)}
-    .hero-note{letter-spacing:.035em}
-    .visual{min-height:400px}
-    .orb{
-      width:min(330px,75vw);
-      background:radial-gradient(circle at 35% 30%,rgba(118,215,208,.19),rgba(131,169,245,.12) 45%,rgba(15,26,43,.2) 72%);
-      border:1px solid rgba(118,215,208,.3);
-      box-shadow:0 0 75px rgba(91,130,210,.12),inset 0 0 55px rgba(131,169,245,.09)
-    }
-    .orb:before{border-color:rgba(131,169,245,.32)}
-    .orb:after{border-color:rgba(118,215,208,.22)}
-    .orbcore strong{color:var(--cyan);font-weight:800}
-    section{border-top-color:rgba(190,208,235,.11);padding:92px 0}
-    .section-head{margin-bottom:42px}
-    .section-head h2{font-weight:760;letter-spacing:-.045em}
-    .section-head p{line-height:1.8}
-    .panel,.cap,.project{
-      background:linear-gradient(145deg,rgba(18,31,51,.96),rgba(14,25,42,.96));
-      border-color:rgba(190,208,235,.14);
-      box-shadow:0 12px 36px rgba(0,0,0,.10)
-    }
-    .panel{padding:30px}
-    .panel h3,.cap h3,.project h3{letter-spacing:-.015em}
-    .principle{background:rgba(255,255,255,.025);border-color:rgba(190,208,235,.12)}
-    .principle b,.num{color:var(--cyan)}
-    .cap{padding:26px;transition:transform .2s ease,border-color .2s ease}
-    .cap:hover,.project:hover{transform:translateY(-3px);border-color:rgba(118,215,208,.36)}
-    .cap p,.project-body p,.step p{line-height:1.75}
-    .tag{background:rgba(131,169,245,.07);border-color:rgba(131,169,245,.22);color:#dce7fa;padding:9px 14px}
-    .tag:hover{border-color:var(--cyan)}
-    .project-top{
-      background:
-        radial-gradient(circle at 82% 18%,rgba(131,169,245,.24),transparent 43%),
-        linear-gradient(120deg,rgba(118,215,208,.09),rgba(18,31,51,.15))
-    }
-    .project-top span{color:var(--cyan)}
-    .project-body small{color:#a9c3ff}
-    .step{border-top-color:var(--cyan)}
-    .contact{
-      background:linear-gradient(110deg,rgba(131,169,245,.10),rgba(118,215,208,.075));
-      border-color:rgba(190,208,235,.17);box-shadow:0 18px 50px rgba(0,0,0,.12)
-    }
-    footer{border-top:1px solid rgba(190,208,235,.10);margin-top:10px}
-    @media(max-width:850px){.hero{gap:28px}.links.open{background:#0d1728}}
-    @media(max-width:560px){section{padding:70px 0}.panel{padding:23px}.hero h1{font-size:3.15rem}}
+    .nav-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { font: 700 1.05rem "DM Sans", sans-serif; letter-spacing: .035em; }
+    .brand span { color: var(--cyan); }
+    .nav-links { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; color: var(--muted); font-size: .9rem; }
+    .nav-links a:hover, .nav-links a.active { color: var(--cyan); }
+    .menu-btn { display: none; border: 1px solid var(--line); background: var(--surface); color: var(--text); padding: 9px 13px; border-radius: 10px; cursor: pointer; }
+    .hero { min-height: 690px; display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 55px; padding: 88px 0 90px; }
+    .eyebrow, .kicker { color: var(--cyan); font-size: .76rem; font-weight: 700; letter-spacing: .19em; text-transform: uppercase; }
+    h1, h2, h3 { font-family: "Space Grotesk", sans-serif; }
+    h1 { font-family: "DM Sans", sans-serif; font-size: clamp(3.4rem, 7.3vw, 6.2rem); font-weight: 700; line-height: 1.08; letter-spacing: -.025em; word-spacing: .04em; margin: 20px 0; }
+    h1 em { font-style: normal; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .lead { max-width: 650px; color: #64748b; font-size: 1.1rem; line-height: 1.85; }
+    .actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 30px; }
+    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 9px; padding: 12px 19px; border-radius: 11px; border: 1px solid var(--line); font-weight: 700; transition: .22s ease; }
+    .btn:hover { transform: translateY(-3px); border-color: var(--cyan); }
+    .btn-primary { color: #ffffff; border: 0; background: var(--gradient); box-shadow: 0 10px 24px rgba(20,43,74,.18); }
+    .btn-secondary { background: rgba(20,43,74,.045); }
+    .hero-note { color: var(--muted); font-size: .88rem; margin-top: 22px; }
+    .hero-art { min-height: 410px; display: grid; place-items: center; position: relative; }
+    .orbit { width: min(340px, 74vw); aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center; position: relative;
+      background: radial-gradient(circle at 34% 28%, rgba(53,99,233,.13), rgba(53,99,233,.07) 48%, transparent 70%);
+      border: 1px solid rgba(53,99,233,.22); box-shadow: 0 0 75px rgba(53,99,233,.10), inset 0 0 45px rgba(53,99,233,.04); }
+    .orbit:before, .orbit:after { content: ""; position: absolute; inset: -25px; border: 1px solid rgba(20,43,74,.18); border-radius: 50%; transform: rotate(-28deg) scaleY(.42); }
+    .orbit:after { inset: -50px; border-color: rgba(53,99,233,.18); transform: rotate(33deg) scaleY(.32); }
+    .orbit-core { text-align: center; }
+    .orbit-core strong { display: block; font: 700 5rem "Space Grotesk", sans-serif; line-height: 1; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .orbit-core span { display: block; color: var(--muted); letter-spacing: .2em; font-size: .72rem; margin-top: 12px; }
+    .float-chip { position: absolute; padding: 9px 13px; border: 1px solid var(--line); background: rgba(255,255,255,.94); backdrop-filter: blur(12px); border-radius: 12px; color: #263B5B; font-size: .82rem; box-shadow: 0 10px 30px rgba(20,43,74,.07); }
+    .chip-one { top: 14%; right: 0; } .chip-two { bottom: 16%; left: 0; }
+    section { padding: 92px 0; border-top: 1px solid rgba(20,43,74,.07); }
+    .section-head { max-width: 720px; margin-bottom: 38px; }
+    .section-head h2 { font-size: clamp(2.1rem, 4.3vw, 3.35rem); line-height: 1.12; letter-spacing: -.045em; margin: 12px 0; }
+    .section-head p { color: var(--muted); margin: 0; }
+    .about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 18px; }
+    .panel, .card { background: linear-gradient(145deg, #ffffff, #fbfcfb); border: 1px solid var(--line); border-radius: 18px; }
+    .panel { padding: 29px; }
+    .panel p, .card p { color: var(--muted); }
+    .principles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .principle { background: rgba(20,43,74,.045); border: 1px solid var(--line); padding: 16px; border-radius: 13px; }
+    .principle b { display: block; color: var(--cyan); margin-bottom: 5px; }
+    .principle span { color: var(--muted); font-size: .87rem; }
+    .cap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .card { padding: 24px; transition: transform .22s ease, border-color .22s ease; }
+    .card:hover { transform: translateY(-5px); border-color: rgba(20,43,74,.38); }
+    .card-num { color: var(--cyan); font-size: .78rem; letter-spacing: .14em; }
+    .card h3 { margin: 12px 0 7px; font-size: 1.15rem; }
+    .card p { margin: 0; font-size: .93rem; }
+    .skill-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .skill-group h3 { margin: 0 0 16px; font-size: 1.05rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; }
+    .tag { padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(20,43,74,.20); background: rgba(53,99,233,.07); color: #142b4a; font-size: .86rem; }
+    .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 17px; }
+    .project-visual { min-height: 145px; display: flex; align-items: flex-end; padding: 23px; background: radial-gradient(circle at 80% 10%, rgba(53,99,233,.13), transparent 45%), linear-gradient(120deg, rgba(53,99,233,.07), rgba(53,99,233,.055)); border-bottom: 1px solid var(--line); }
+    .project-visual span { color: var(--cyan); font-size: .75rem; letter-spacing: .16em; text-transform: uppercase; }
+    .project-content { padding: 23px; }
+    .project-content h3 { margin: 0 0 8px; }
+    .project-content p { color: var(--muted); font-size: .93rem; }
+    .project-link { display: inline-block; margin-top: 7px; color: var(--cyan); font-weight: 700; font-size: .9rem; }
+    .approach { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+    .step { padding: 18px 14px 0 0; border-top: 2px solid var(--purple); }
+    .step strong { font-family: "Space Grotesk", sans-serif; }
+    .step p { color: var(--muted); font-size: .9rem; }
+    .contact { display: flex; justify-content: space-between; align-items: center; gap: 25px; padding: 36px; border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(110deg, #EEF2FA, #EAF0FF); }
+    .contact h2 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 2.6rem); }
+    .contact p { color: var(--muted); margin: 0; }
+    .contact-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    footer { padding: 28px 0; color: var(--muted); font-size: .85rem; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 
+
+    .chat-launcher { position: fixed; right: 24px; bottom: 24px; z-index: 50; display: flex; align-items: center; gap: 10px; border: 0; border-radius: 999px; padding: 13px 18px; background: var(--gradient); color: #fff; font: 700 .94rem "DM Sans",sans-serif; box-shadow: 0 12px 32px rgba(20,43,74,.24); cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
+    .chat-launcher:hover { transform: translateY(-3px); box-shadow: 0 16px 36px rgba(20,43,74,.30); }
+    .chat-launcher-icon { font-size: 1.2rem; }
+    .chat-panel { position: fixed; right: 24px; bottom: 88px; z-index: 51; width: min(370px, calc(100vw - 30px)); height: min(520px, calc(100vh - 125px)); display: none; flex-direction: column; overflow: hidden; border: 1px solid rgba(20,43,74,.18); border-radius: 20px; background: #fff; box-shadow: 0 22px 70px rgba(23,47,80,.20); }
+    .chat-panel.open { display: flex; }
+    .chat-head { display: flex; align-items: center; gap: 11px; padding: 16px; color: #fff; background: linear-gradient(115deg,#3563E9,#142b4a); }
+    .chat-avatar { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.2); font-weight: 700; }
+    .chat-head-copy { display: grid; gap: 2px; flex: 1; }
+    .chat-head-copy strong { font-size: .94rem; }
+    .chat-head-copy span { font-size: .75rem; opacity: .9; }
+    .chat-head-copy i { display: inline-block; width: 7px; height: 7px; margin-right: 5px; border-radius: 50%; background: #C8D6FF; }
+    .chat-close { border: 0; background: transparent; color: #fff; font-size: 1.7rem; cursor: pointer; }
+    .chat-messages { display: flex; flex: 1; flex-direction: column; align-items: flex-start; gap: 12px; padding: 16px; overflow-y: auto; background: #F7F9FE; }
+    .chat-bubble { max-width: 88%; padding: 11px 13px; border-radius: 14px; font-size: .88rem; line-height: 1.55; }
+    .chat-bubble.bot { color: #263B5B; background: #EEF2FA; border-bottom-left-radius: 4px; }
+    .chat-bubble.user { align-self: flex-end; color: #fff; background: #142b4a; border-bottom-right-radius: 4px; }
+    .chat-suggestions { display: flex; flex-wrap: wrap; gap: 7px; }
+    .chat-suggestions button { border: 1px solid rgba(20,43,74,.20); border-radius: 999px; padding: 7px 10px; color: #142b4a; background: #fff; font-size: .76rem; cursor: pointer; }
+    .chat-form { display: flex; gap: 8px; padding: 12px; border-top: 1px solid #DCE4F2; background: #fff; }
+    .chat-form input { min-width: 0; flex: 1; border: 1px solid #cbd5e1; border-radius: 999px; padding: 11px 14px; outline: none; color: #142b4a; font: inherit; font-size: .88rem; }
+    .chat-form input:focus { border-color: #3563E9; box-shadow: 0 0 0 3px rgba(53,99,233,.09); }
+    .chat-form button { width: 42px; height: 42px; border: 0; border-radius: 50%; color: #fff; background: #142b4a; cursor: pointer; }
+    .chat-footnote { margin: 0; padding: 0 12px 10px; color: #7b8da5; background: #fff; font-size: .68rem; text-align: center; }
+    @media (max-width: 560px) { .chat-launcher { right: 15px; bottom: 15px; } .chat-panel { right: 15px; bottom: 78px; } }
+
+    .expect-list { display: grid; gap: 17px; margin-top: 18px; }
+    .expect-list b { color: var(--cyan); display: block; margin-bottom: 3px; }
+    .expect-list p { margin: 0; color: var(--muted); font-size: .92rem; }
+    .faq-list { display: grid; gap: 12px; max-width: 900px; }
+    .faq-item { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px 21px; box-shadow: 0 8px 24px rgba(20,43,74,.045); }
+    .faq-item summary { cursor: pointer; font-weight: 700; color: var(--text); list-style: none; display: flex; justify-content: space-between; gap: 15px; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; color: var(--cyan); font-size: 1.25rem; line-height: 1; }
+    .faq-item[open] summary::after { content: "−"; }
+    .faq-item p { margin: 12px 0 0; color: var(--muted); }
+    .expect-list > div { padding-left: 15px; border-left: 2px solid rgba(53,99,233,.24); }
+    .hero .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: #EEF2FA; letter-spacing: .12em; }
+    .hero .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #3563E9; box-shadow: 0 0 0 4px rgba(53,99,233,.10); }
+    .btn-primary:hover { box-shadow: 0 14px 30px rgba(53,99,233,.24); }
+
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } .reveal { opacity: 1; transform: none; } }
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; padding-top: 70px; gap: 25px; }
+      .hero-art { min-height: 340px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .cap-grid, .skill-groups { grid-template-columns: repeat(2, 1fr); }
+      .approach { grid-template-columns: repeat(2, 1fr); }
+      .nav-links { display: none; position: absolute; top: 76px; left: 0; right: 0; padding: 20px 24px; background: #ffffff; border-bottom: 1px solid var(--line); flex-direction: column; align-items: flex-start; }
+      .nav-links.open { display: flex; }
+      .menu-btn { display: block; }
+      .contact { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 30px, var(--max)); }
+      .hero { min-height: auto; padding: 62px 0; }
+      h1 { font-size: 3.35rem; }
+      section { padding: 68px 0; }
+      .cap-grid, .skill-groups, .projects, .principles, .approach { grid-template-columns: 1fr; }
+      .panel, .card { padding: 21px; }
+      .project { padding: 0; }
+      .project-content { padding: 21px; }
+      .orbit { width: 235px; }
+      .orbit-core strong { font-size: 4rem; }
+      .hero-art { min-height: 290px; }
+      .chip-one { right: -2px; } .chip-two { left: -2px; }
+      .contact { padding: 24px; }
+    }
   </style>
 </head>
 <body>
-<header class="nav"><div class="wrap navin">
-  <a class="brand" href="#home">FARHANA<span>.</span></a>
-  <nav class="links" id="navlinks"><a href="#about">Profile</a><a href="#expertise">Expertise</a><a href="#skills">Technology</a><a href="#work">Selected Work</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
-  <button class="menu" id="menubtn" aria-label="Toggle navigation">Menu</button>
-</div></header>
-<main>
-  <div class="wrap hero" id="home">
-    <div>
-      <div class="eyebrow">Artificial Intelligence · Engineering · Innovation</div>
-      <h1>Farhana<br>Batool<br><em>AI Engineer</em></h1>
-      <p class="lead">Engineering intelligent solutions through machine learning, generative AI, and thoughtfully designed AI systems — with a focus on practical impact, reliability, and responsible innovation.</p>
-      <div class="actions"><a class="btn primary" href="#work">Explore selected work ↗</a><a class="btn" href="#contact">Get in touch</a></div>
-      <p class="hero-note">Machine Learning · Generative AI · Intelligent Systems</p>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home">FARHANA<span>.</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#solutions">Solutions</a><a href="#expertise">Services</a><a href="#skills">Skills</a>
+        <a href="#work">Projects</a><a href="#why-work-together">Why work together</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
     </div>
-    <div class="visual" aria-label="Abstract artificial intelligence visual"><div class="orb"><div class="orbcore"><strong>AI</strong><span>INTELLIGENCE<br>IN MOTION</span></div></div></div>
-  </div>
+  </header>
 
-  <section id="about"><div class="wrap">
-    <div class="section-head"><div class="kicker">Professional profile</div><h2>Building intelligence into real-world solutions.</h2><p>A professional portfolio focused on engineering capability, technical problem-solving, and the development of useful AI-powered systems.</p></div>
-    <div class="about-grid">
-      <div class="panel"><h3>About Farhana</h3><p>I am Farhana Batool, an AI Engineer focused on the design and development of intelligent technologies. My work and interests span machine learning, generative AI, and the application of AI to meaningful real-world challenges.</p><p>I approach AI engineering with an emphasis on sound technical foundations, clear problem definition, practical implementation, and solutions that create measurable value.</p></div>
-      <div class="panel"><div class="principles">
-        <div class="principle"><b>Engineering mindset</b><span>Structured problem-solving and implementation.</span></div>
-        <div class="principle"><b>Applied AI</b><span>Turning use cases into intelligent systems.</span></div>
-        <div class="principle"><b>Innovation</b><span>Exploring modern AI methods and tools.</span></div>
-        <div class="principle"><b>Impact</b><span>Prioritizing usefulness, reliability, and value.</span></div>
-      </div></div>
+  <main>
+    <div class="wrap hero" id="home">
+      <div class="reveal">
+        <div class="eyebrow">Artificial Intelligence · Engineering · Innovation</div>
+        <h1>Farhana<br>Batool<br><em>AI Engineer</em></h1>
+        <p class="lead">I design practical AI-powered experiences that turn complex ideas into useful digital solutions. My focus spans machine learning, generative AI, intelligent applications, and modern web experiences — with an emphasis on clarity, reliability, and real-world value.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#work">See what I can create <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="#contact">Discuss your idea</a>
+        </div>
+        <p class="hero-note">AI Chatbots · Generative AI · Intelligent Applications</p>
+      </div>
+      <div class="hero-art reveal" aria-label="Abstract AI-inspired graphic">
+        <div class="orbit"><div class="orbit-core"><strong>AI</strong><span>IDEAS INTO<br>INTELLIGENCE</span></div></div>
+        <div class="float-chip chip-one">✦ Generative AI</div>
+        <div class="float-chip chip-two">⌘ Intelligent systems</div>
+      </div>
     </div>
-  </div></section>
 
-  <section id="expertise"><div class="wrap">
-    <div class="section-head"><div class="kicker">Core expertise</div><h2>AI capabilities</h2><p>Core technical domains represented across the portfolio.</p></div>
-    <div class="cap-grid">
-      <article class="cap"><div class="num">01 / MACHINE LEARNING</div><h3>Predictive Intelligence</h3><p>Data-driven modeling, pattern recognition, model evaluation, and predictive approaches for practical problems.</p></article>
-      <article class="cap"><div class="num">02 / GENERATIVE AI</div><h3>Generative Systems</h3><p>Exploring language-model-powered applications, prompt design, retrieval workflows, and AI-assisted experiences.</p></article>
-      <article class="cap"><div class="num">03 / AI APPLICATIONS</div><h3>Intelligent Products</h3><p>Designing AI-enabled applications that connect technical capability with clear user and business needs.</p></article>
-      <article class="cap"><div class="num">04 / DATA & ANALYTICS</div><h3>Data Intelligence</h3><p>Working with data preparation, exploration, feature understanding, and evidence-led decisions.</p></article>
-      <article class="cap"><div class="num">05 / MODEL DEVELOPMENT</div><h3>Model Lifecycle</h3><p>Considering experimentation, evaluation, iteration, and the path from prototype toward deployment.</p></article>
-      <article class="cap"><div class="num">06 / RESPONSIBLE AI</div><h3>Trustworthy Systems</h3><p>Keeping reliability, transparency, privacy, and responsible use in view when developing AI solutions.</p></article>
-    </div>
-  </div></section>
+    <section id="about"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">About me</div><h2>Technology with purpose. Intelligence with impact.</h2><p>I bring together AI concepts, thoughtful design, and practical development to create digital experiences with a clear purpose.</p></div>
+      <div class="about-grid">
+        <article class="panel reveal"><h3>Who I am</h3><p>I am Farhana Batool, an AI Engineer interested in designing and developing intelligent technologies. My areas of focus include machine learning, generative AI, data-informed problem-solving, and AI-enabled applications.</p><p>I value strong foundations, clear communication, continuous learning, and building solutions that address real needs. I aim to approach every project with curiosity, care, and a commitment to responsible technology.</p></article>
+        <div class="panel principles reveal">
+          <div class="principle"><b>Problem solving</b><span>Breaking complex challenges into clear steps.</span></div>
+          <div class="principle"><b>Applied AI</b><span>Connecting AI capabilities to useful needs.</span></div>
+          <div class="principle"><b>Continuous learning</b><span>Exploring tools, methods, and new ideas.</span></div>
+          <div class="principle"><b>Responsible design</b><span>Keeping reliability and user needs in focus.</span></div>
+        </div>
+      </div>
+    </div></section>
 
-  <section id="skills"><div class="wrap">
-    <div class="section-head"><div class="kicker">Technical toolkit</div><h2>Technology & tools</h2><p>A focused technology profile. Keep only the tools and frameworks you can confidently discuss and demonstrate.</p></div>
-    <div class="panel">
-      <h3>Programming & development</h3><div class="skill-wrap"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span></div>
-      <h3 style="margin-top:28px">AI & machine learning ecosystem</h3><div class="skill-wrap"><span class="tag">Machine Learning</span><span class="tag">Generative AI</span><span class="tag">Large Language Models</span><span class="tag">Hugging Face</span></div>
-      <h3 style="margin-top:28px">Engineering workflow</h3><div class="skill-wrap"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">API Integration</span><span class="tag">Web Deployment</span></div>
-    </div>
-  </div></section>
 
-  <section id="work"><div class="wrap">
-    <div class="section-head"><div class="kicker">Portfolio</div><h2>Selected AI work</h2><p>Use this section to present verified projects with a clear problem, your engineering contribution, the technology used, and the outcome.</p></div>
-    <div class="projects">
-      <article class="project"><div class="project-top"><span>Case study 01 · Applied AI</span></div><div class="project-body"><h3>AI-Powered Problem Solving</h3><p>Present a real project that applies AI to a defined industry or operational challenge. Explain the problem, your solution architecture, your individual contribution, and the evidence of impact.</p><small>ADD: project repository · demo · results</small></div></article>
-      <article class="project"><div class="project-top"><span>Case study 02 · Generative AI</span></div><div class="project-body"><h3>Generative AI Application</h3><p>Showcase a verified application using generative AI. Describe the user need, model or service used, workflow design, evaluation approach, and key limitations.</p><small>ADD: project repository · demo · results</small></div></article>
-    </div>
-    <p class="project-note">These are portfolio case-study placeholders, not claims of completed projects. Replace them with your actual work before publishing.</p>
-  </div></section>
+    <section id="solutions"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">Built around your goals</div><h2>Useful solutions, not just impressive technology.</h2><p>Whether you are exploring an idea or improving an existing workflow, the focus stays on the people who will use the solution.</p></div>
+      <div class="cap-grid">
+        <article class="card reveal"><span class="card-num">01 / SAVE TIME</span><h3>Smarter workflows</h3><p>Explore ways AI can reduce repetitive work, organize information, and help teams focus on higher-value tasks.</p></article>
+        <article class="card reveal"><span class="card-num">02 / SERVE USERS</span><h3>Better digital experiences</h3><p>Create clear, responsive websites and conversational experiences that make it easier for people to find what they need.</p></article>
+        <article class="card reveal"><span class="card-num">03 / MOVE FORWARD</span><h3>Practical next steps</h3><p>Turn an early idea into a defined plan, a focused prototype, or a useful improvement that can be tested.</p></article>
+      </div>
+    </div></section>
 
-  <section id="approach"><div class="wrap">
-    <div class="section-head"><div class="kicker">Engineering approach</div><h2>From problem to deployed solution.</h2><p>A disciplined workflow for developing AI systems that address clearly defined needs.</p></div>
-    <div class="approach">
-      <div class="step"><b>01. Define</b><p>Understand the problem, users, constraints, and success criteria.</p></div>
-      <div class="step"><b>02. Design</b><p>Select an appropriate data, model, and system architecture.</p></div>
-      <div class="step"><b>03. Develop</b><p>Build, test, evaluate, and iteratively improve the solution.</p></div>
-      <div class="step"><b>04. Deliver</b><p>Document, deploy, monitor, and refine for real-world use.</p></div>
-    </div>
-  </div></section>
+    <section id="why-work-together"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">A thoughtful way to work</div><h2>Clear communication at every step.</h2><p>Good technology starts with understanding the challenge and agreeing on what success should look like.</p></div>
+      <div class="about-grid">
+        <article class="panel reveal"><h3>What you can expect</h3>
+          <div class="expect-list">
+            <div><b>Listen first</b><p>Understand your goals, audience, and constraints before recommending a solution.</p></div>
+            <div><b>Keep it understandable</b><p>Explain the approach, key decisions, and trade-offs in straightforward language.</p></div>
+            <div><b>Build with purpose</b><p>Focus on useful features, responsive design, and a smooth experience for your users.</p></div>
+            <div><b>Improve through feedback</b><p>Review the result together and identify sensible next improvements.</p></div>
+          </div>
+        </article>
+        <aside class="panel reveal">
+          <div class="kicker">A good starting point</div>
+          <h3>Have a challenge in mind?</h3>
+          <p>Share what you are trying to achieve. We can start with the problem, explore possible approaches, and define a realistic first step.</p>
+          <a class="btn btn-primary" href="#contact">Tell me about your idea <span aria-hidden="true">↗</span></a>
+        </aside>
+      </div>
+    </div></section>
 
-  <section id="contact"><div class="wrap">
-    <div class="contact"><div><div class="kicker">Connect</div><h2>Let's build something intelligent.</h2><p>For professional opportunities, AI collaborations, and discussions about applied artificial intelligence.</p></div>
-      <div class="contact-links"><a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></div>
+    <section id="faq"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">Quick answers</div><h2>Frequently asked questions</h2><p>A few useful details before starting a conversation.</p></div>
+      <div class="faq-list">
+        <details class="faq-item reveal"><summary>What kinds of projects can we discuss?</summary><p>AI chatbot concepts, generative-AI workflows, responsive websites, and ideas for integrating AI into digital experiences.</p></details>
+        <details class="faq-item reveal"><summary>Do I need a complete project brief?</summary><p>No. A short description of the challenge, who it affects, and what you hope to improve is a good place to begin.</p></details>
+        <details class="faq-item reveal"><summary>How do we get started?</summary><p>Use the LinkedIn contact link below to introduce your idea. We can discuss the goal and identify a sensible next step.</p></details>
+        <details class="faq-item reveal"><summary>Can you work on an existing website or idea?</summary><p>Yes, we can discuss the current experience, the improvements you have in mind, and what would be practical to tackle first.</p></details>
+      </div>
+    </div></section>
+
+    <section id="expertise"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">What I can help create</div><h2>AI services & capabilities</h2><p>Practical technology services designed around real user needs and business challenges.</p></div>
+      <div class="cap-grid">
+        <article class="card reveal"><span class="card-num">01 / AI CHATBOTS</span><h3>Conversational AI</h3><p>Helpful chatbot experiences that make information easier to access and customer interactions more efficient.</p></article>
+        <article class="card reveal"><span class="card-num">02 / GENERATIVE AI</span><h3>AI-powered workflows</h3><p>Language-model applications and AI-assisted workflows that support everyday tasks and productivity.</p></article>
+        <article class="card reveal"><span class="card-num">03 / WEB EXPERIENCES</span><h3>Modern Websites</h3><p>Responsive, polished websites that communicate clearly and provide a smooth user experience.</p></article>
+        <article class="card reveal"><span class="card-num">04 / MACHINE LEARNING</span><h3>Data-driven solutions</h3><p>Exploring data patterns and machine-learning methods to support informed decisions.</p></article>
+        <article class="card reveal"><span class="card-num">05 / INTEGRATION</span><h3>AI & API integration</h3><p>Connecting digital products with APIs and AI services to create more capable experiences.</p></article>
+        <article class="card reveal"><span class="card-num">06 / RESPONSIBLE AI</span><h3>Thoughtful development</h3><p>Keeping usability, reliability, privacy, and responsible technology in view.</p></article>
+      </div>
+    </div></section>
+
+    <section id="skills"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">Technical toolkit</div><h2>Technology & tools</h2><p>A snapshot of technologies and concepts represented in this portfolio. Keep this list aligned with tools you can confidently discuss and demonstrate.</p></div>
+      <div class="skill-groups">
+        <article class="panel skill-group reveal"><h3>Web & programming</h3><div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span></div></article>
+        <article class="panel skill-group reveal"><h3>AI & data</h3><div class="tags"><span class="tag">Machine Learning</span><span class="tag">Generative AI</span><span class="tag">LLMs</span><span class="tag">Data Analysis</span><span class="tag">Hugging Face</span></div></article>
+        <article class="panel skill-group reveal"><h3>Development workflow</h3><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">API Integration</span><span class="tag">Web Deployment</span></div></article>
+      </div>
+    </div></section>
+
+    <section id="work"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">Selected work</div><h2>Projects & practical exploration</h2><p>Use project entries to show the problem, your contribution, the tools used, and a verifiable result. Replace the sample entry below with your strongest completed work.</p></div>
+      <div class="projects">
+        <article class="card project reveal">
+          <div class="project-visual"><span>Portfolio · Web development</span></div>
+          <div class="project-content"><h3>AI Engineer Portfolio</h3><p>A responsive professional portfolio presenting AI interests, technical capabilities, and project work through a custom-designed web experience.</p><a class="project-link" href="https://github.com/farhanabatool32304-ai/farhana-ai-portfolio" target="_blank" rel="noopener noreferrer">View source repository ↗</a></div>
+        </article>
+        <article class="card project reveal">
+          <div class="project-visual"><span>Project spotlight · Expand your work</span></div>
+          <div class="project-content"><h3>More projects coming soon</h3><p>This space is ready for another verified project. Add a working demo, source code, or a short case study when it is available.</p><a class="project-link" href="#contact">Discuss a collaboration ↗</a></div>
+        </article>
+      </div>
+    </div></section>
+
+    <section id="approach"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">My workflow</div><h2>From a clear problem to a thoughtful solution.</h2><p>A practical process for approaching technology projects.</p></div>
+      <div class="approach">
+        <article class="step reveal"><strong>01. Understand</strong><p>Define the problem, users, constraints, and success criteria.</p></article>
+        <article class="step reveal"><strong>02. Design</strong><p>Plan the data, tools, model, and system architecture.</p></article>
+        <article class="step reveal"><strong>03. Build & test</strong><p>Develop, evaluate, learn from results, and improve.</p></article>
+        <article class="step reveal"><strong>04. Deliver</strong><p>Document, deploy, and refine the solution responsibly.</p></article>
+      </div>
+    </div></section>
+
+    <section id="contact"><div class="wrap">
+      <div class="contact reveal">
+        <div><div class="kicker">Let's connect</div><h2>Let’s build something intelligent.</h2><p>Have a project idea, a business challenge, or an opportunity to collaborate? Let’s connect and explore what AI can make possible.</p></div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/farhana-batool-772801438/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a class="btn btn-secondary" href="https://github.com/farhanabatool32304-ai" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a class="btn btn-secondary" href="mailto:farhanabatool32304@gmail.com">Email Me ✉</a>
+        </div>
+      </div>
+    </div></section>
+  </main>
+
+  <footer class="wrap"><span>© <span id="year"></span> Farhana Batool · AI Engineer</span><span><a href="mailto:farhanabatool32304@gmail.com">farhanabatool32304@gmail.com</a> · Designed with curiosity and purpose.</span></footer>
+
+
+  <button class="chat-launcher" id="chatLauncher" type="button" aria-label="Open AI assistant">
+    <span class="chat-launcher-icon" aria-hidden="true">✦</span><span>Chat with AI</span>
+  </button>
+  <section class="chat-panel" id="chatPanel" aria-label="AI website assistant" aria-hidden="true">
+    <div class="chat-head">
+      <div class="chat-avatar">AI</div>
+      <div class="chat-head-copy"><strong>Farhana's AI Assistant</strong><span><i></i> Here to help</span></div>
+      <button class="chat-close" id="chatClose" type="button" aria-label="Close chat">×</button>
     </div>
-  </div></section>
-</main>
-<footer class="wrap"><span>© <span id="year"></span> Farhana Batool · AI Engineer</span><span>Designed for intelligent impact.</span></footer>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  const menu = document.getElementById('menubtn');
-  const links = document.getElementById('navlinks');
-  menu.addEventListener('click', () => links.classList.toggle('open'));
-  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
-</script>
+    <div class="chat-messages" id="chatMessages" aria-live="polite">
+      <div class="chat-bubble bot">Hello! 👋 I can help you learn about Farhana's AI services, skills, and projects. What would you like to know?</div>
+      <div class="chat-suggestions">
+        <button type="button" data-question="What AI services do you offer?">AI services</button>
+        <button type="button" data-question="How can I contact Farhana?">Contact</button>
+        <button type="button" data-question="Tell me about your projects.">Projects</button>
+      </div>
+    </div>
+    <form class="chat-form" id="chatForm">
+      <input id="chatInput" type="text" placeholder="Type your question..." aria-label="Your message" maxlength="500" required>
+      <button type="submit" aria-label="Send message">➤</button>
+    </form>
+    <p class="chat-footnote">AI assistant · Responses require a connected secure service</p>
+  </section>
+
+  <script>
+
+    const chatLauncher = document.getElementById("chatLauncher");
+    const chatPanel = document.getElementById("chatPanel");
+    const chatClose = document.getElementById("chatClose");
+    const chatForm = document.getElementById("chatForm");
+    const chatInput = document.getElementById("chatInput");
+    const chatMessages = document.getElementById("chatMessages");
+
+    function setChatOpen(open) {
+      chatPanel.classList.toggle("open", open);
+      chatPanel.setAttribute("aria-hidden", String(!open));
+      if (open) chatInput.focus();
+    }
+    chatLauncher.addEventListener("click", () => setChatOpen(true));
+    chatClose.addEventListener("click", () => setChatOpen(false));
+
+    function addChatMessage(text, type) {
+      const bubble = document.createElement("div");
+      bubble.className = "chat-bubble " + type;
+      bubble.textContent = text;
+      chatMessages.appendChild(bubble);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      return bubble;
+    }
+
+    async function sendChatMessage(message) {
+      addChatMessage(message, "user");
+      const loading = addChatMessage("Thinking…", "bot");
+      try {
+        const response = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message })
+        });
+        if (!response.ok) throw new Error("Chat service is not connected.");
+        const data = await response.json();
+        loading.textContent = data.reply || "I couldn't prepare an answer. Please contact Farhana through LinkedIn.";
+      } catch (error) {
+        loading.textContent = "The AI service is not connected yet. Please use the LinkedIn button to contact Farhana. A secure backend is needed to activate live AI replies.";
+      }
+    }
+
+    chatForm.addEventListener("submit", event => {
+      event.preventDefault();
+      const message = chatInput.value.trim();
+      if (!message) return;
+      chatInput.value = "";
+      sendChatMessage(message);
+    });
+
+    chatMessages.querySelectorAll("[data-question]").forEach(button => {
+      button.addEventListener("click", () => sendChatMessage(button.dataset.question));
+    });
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach(element => revealObserver.observe(element));
+  </script>
 </body>
 </html>
